@@ -1,8 +1,8 @@
 <div align="center">
 
-# ✨ TaskFlow - AI-Powered Task Manager
+# 🚀 Orbit AI Task Manager
 
-<img src="images/githubshowcase.png" alt="TaskFlow App Showcase" width="100%"/>
+<img src="images/githubshowcase.png" alt="Orbit AI Task Manager Showcase" width="100%"/>
 
 A premium, modern task management application built with React, TypeScript, and Vite. Features a stunning UI with dark mode support, intelligent task organization, and seamless user experience.
 
