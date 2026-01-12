@@ -1,0 +1,178 @@
+.calendar {
+    padding: var(--space-md);
+}
+
+.calendar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.calendar__date-picker {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-fast);
+}
+
+.calendar__date-picker:hover {
+    border-color: var(--color-gray);
+}
+
+.calendar__date-picker .rotated {
+    transform: rotate(180deg);
+}
+
+.calendar__nav {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.calendar__nav button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
+    transition: all var(--transition-fast);
+}
+
+.calendar__nav button:hover {
+    background-color: var(--color-light-bg);
+}
+
+.calendar__month-label {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-md);
+}
+
+.calendar__weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-xs);
+    margin-bottom: var(--space-sm);
+}
+
+.calendar__weekday {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray);
+    padding: var(--space-sm);
+}
+
+.calendar__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-xs);
+}
+
+.calendar__day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-dark);
+    transition: all var(--transition-fast);
+}
+
+.calendar__day:hover:not(.calendar__day--empty) {
+    background-color: var(--color-light-bg);
+}
+
+.calendar__day--empty {
+    visibility: hidden;
+}
+
+.calendar__day--selected {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.calendar__day--highlighted {
+    background-color: var(--color-primary-green);
+    color: var(--color-dark);
+}
+
+.calendar__day--highlighted.calendar__day--selected {
+    background-color: var(--color-primary-purple);
+}
+
+.calendar__day--today {
+    border: 2px solid var(--color-primary-green);
+}
+
+/* Week View */
+.week-view {
+    padding: var(--space-md);
+}
+
+.week-view__header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-xs);
+    margin-bottom: var(--space-sm);
+}
+
+.week-view__day-name {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray);
+}
+
+.week-view__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-xs);
+}
+
+.week-view__day {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-dark);
+    border: 2px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+.week-view__day:hover {
+    background-color: var(--color-light-bg);
+}
+
+.week-view__day--selected {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.week-view__day--highlighted {
+    border-color: var(--color-primary-green);
+}
+
+.week-view__day--highlighted.week-view__day--selected {
+    background-color: var(--color-primary-green);
+    color: var(--color-dark);
+    border-color: var(--color-primary-green);
+}

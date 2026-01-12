@@ -1,0 +1,111 @@
+.bar-chart {
+    padding: var(--space-md);
+}
+
+.bar-chart__bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.bar-chart__column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.bar-chart__bar {
+    width: 100%;
+    max-width: 32px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-fast);
+}
+
+.bar-chart__bar:hover {
+    transform: scaleY(1.02);
+}
+
+.bar-chart__segment {
+    width: 100%;
+    transition: all var(--transition-fast);
+}
+
+.bar-chart__segment--in-progress {
+    background-color: var(--color-primary-green);
+}
+
+.bar-chart__segment--in-review {
+    background-color: var(--color-primary-purple);
+}
+
+.bar-chart__segment--on-hold {
+    background: repeating-linear-gradient(-45deg,
+            var(--color-charcoal),
+            var(--color-charcoal) 2px,
+            var(--color-dark) 2px,
+            var(--color-dark) 4px);
+}
+
+.bar-chart__segment--completed {
+    background-color: var(--color-primary-green-light);
+}
+
+.bar-chart__labels {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-sm);
+}
+
+.bar-chart__label {
+    flex: 1;
+    text-align: center;
+}
+
+.bar-chart__day {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-dark);
+    margin-bottom: 2px;
+}
+
+.bar-chart__date {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--color-gray);
+}
+
+/* View Toggle */
+.view-toggle {
+    display: flex;
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xs);
+    gap: var(--space-xs);
+    border: 1px solid var(--color-gray-light);
+}
+
+.view-toggle__btn {
+    flex: 1;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray);
+    transition: all var(--transition-fast);
+}
+
+.view-toggle__btn:hover {
+    color: var(--color-dark);
+}
+
+.view-toggle__btn--active {
+    background-color: var(--color-primary-green);
+    color: var(--color-dark);
+}

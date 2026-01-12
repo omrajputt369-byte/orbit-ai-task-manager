@@ -1,0 +1,52 @@
+.dashboard {
+    min-height: 100vh;
+    background-color: var(--color-light-bg);
+    padding: var(--space-md);
+    padding-bottom: 100px;
+}
+
+.dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+}
+
+.dashboard__header-actions {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.dashboard__title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--space-lg);
+}
+
+.dashboard__meeting {
+    margin-bottom: var(--space-lg);
+}
+
+.dashboard__filters {
+    margin-bottom: var(--space-lg);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.dashboard__filters::-webkit-scrollbar {
+    display: none;
+}
+
+.dashboard__tasks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.dashboard__team-meeting {
+    margin-bottom: var(--space-lg);
+}

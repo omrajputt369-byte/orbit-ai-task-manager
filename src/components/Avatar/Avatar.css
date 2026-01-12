@@ -1,0 +1,77 @@
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--color-white);
+}
+
+.avatar--sm {
+    width: 28px;
+    height: 28px;
+}
+
+.avatar--md {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar--lg {
+    width: 56px;
+    height: 56px;
+}
+
+.avatar__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Avatar Stack */
+.avatar-stack {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-stack__item {
+    margin-left: -8px;
+}
+
+.avatar-stack__item:first-child {
+    margin-left: 0;
+}
+
+.avatar-stack__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    margin-left: -8px;
+    border: 2px solid var(--color-white);
+}
+
+.avatar-stack__count--sm {
+    width: 28px;
+    height: 28px;
+}
+
+.avatar-stack__count--md {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-sm);
+}
+
+.avatar-stack__count--lg {
+    width: 56px;
+    height: 56px;
+    font-size: var(--font-size-md);
+}
+
+.avatar-stack__label {
+    margin-left: var(--space-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-dark);
+}

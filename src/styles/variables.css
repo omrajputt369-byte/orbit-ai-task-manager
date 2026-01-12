@@ -1,0 +1,104 @@
+:root {
+    /* Primary Colors */
+    --color-primary-green: #C5D865;
+    --color-primary-green-light: #D4E57A;
+    --color-primary-green-dark: #A8B94D;
+
+    --color-primary-purple: #A8A0D0;
+    --color-primary-purple-light: #BDB5DE;
+    --color-primary-purple-dark: #8D84B8;
+
+    /* Neutral Colors */
+    --color-dark: #1A1A1A;
+    --color-charcoal: #2D2D2D;
+    --color-gray-dark: #4A4A4A;
+    --color-gray: #8A8A8A;
+    --color-gray-light: #C4C4C4;
+    --color-light-bg: #F5F5F5;
+    --color-white: #FFFFFF;
+
+    /* Theme-aware colors */
+    --color-bg-primary: var(--color-light-bg);
+    --color-bg-secondary: var(--color-white);
+    --color-bg-tertiary: #E8E8E8;
+    --color-text-primary: var(--color-dark);
+    --color-text-secondary: var(--color-gray);
+    --color-border: var(--color-gray-light);
+
+    /* Semantic Colors */
+    --color-success: #4CAF50;
+    --color-warning: #FFC107;
+    --color-error: #F44336;
+
+    /* Border Radius */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-full: 50px;
+    --radius-circle: 50%;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-size-xs: 10px;
+    --font-size-sm: 12px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+
+    /* Z-index */
+    --z-base: 1;
+    --z-dropdown: 10;
+    --z-modal: 100;
+    --z-toast: 1000;
+}
+
+/* Dark Mode Theme */
+[data-theme="dark"] {
+    --color-bg-primary: #121212;
+    --color-bg-secondary: #1E1E1E;
+    --color-bg-tertiary: #2A2A2A;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #B0B0B0;
+    --color-border: #3A3A3A;
+    --color-light-bg: #121212;
+    --color-white: #1E1E1E;
+    --color-dark: #FFFFFF;
+    --color-gray: #B0B0B0;
+    --color-gray-light: #3A3A3A;
+    --color-charcoal: #2A2A2A;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}

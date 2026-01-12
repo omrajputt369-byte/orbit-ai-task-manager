@@ -1,0 +1,87 @@
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-fast);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.status-pill--in_progress {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.status-pill--in_progress .status-pill__count {
+    background-color: var(--color-primary-green);
+    color: var(--color-dark);
+}
+
+.status-pill--in_review {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border-color: var(--color-gray-light);
+}
+
+.status-pill--in_review .status-pill__count {
+    background-color: var(--color-gray-light);
+    color: var(--color-dark);
+}
+
+.status-pill--on_hold {
+    background-color: transparent;
+    color: var(--color-gray);
+    border-color: var(--color-gray-light);
+}
+
+.status-pill--on_hold .status-pill__count {
+    background-color: var(--color-gray-light);
+    color: var(--color-gray-dark);
+}
+
+.status-pill--completed {
+    background-color: var(--color-primary-green);
+    color: var(--color-dark);
+}
+
+.status-pill--completed .status-pill__count {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.status-pill--active {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.status-pill__label {
+    white-space: nowrap;
+}
+
+.status-pill__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.status-pill:hover {
+    transform: scale(1.02);
+}
+
+/* Status Pill Row */
+.status-pill-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}

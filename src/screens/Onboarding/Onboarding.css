@@ -1,0 +1,215 @@
+.onboarding {
+    min-height: 100vh;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.onboarding__illustration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 300px;
+}
+
+.onboarding__cards {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    height: 220px;
+}
+
+.onboarding__card {
+    position: absolute;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: float 4s ease-in-out infinite;
+}
+
+.onboarding__card--1 {
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100px;
+    padding: var(--space-md);
+    animation-delay: 0s;
+}
+
+.onboarding__card--2 {
+    top: 40px;
+    right: 0;
+    width: 160px;
+    height: 120px;
+    padding: var(--space-md);
+    animation-delay: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.onboarding__card--3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 2s;
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+}
+
+.onboarding__card-lines {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.onboarding__line {
+    height: 8px;
+    background: linear-gradient(90deg, var(--color-primary-purple), var(--color-primary-green));
+    border-radius: var(--radius-full);
+    width: 80%;
+}
+
+.onboarding__line--short {
+    width: 40%;
+}
+
+.onboarding__check-icon {
+    color: var(--color-primary-green);
+}
+
+.onboarding__card-code {
+    display: flex;
+    gap: var(--space-sm);
+    color: var(--color-gray);
+    font-family: monospace;
+    font-size: var(--font-size-sm);
+}
+
+.onboarding__card-content {
+    color: var(--color-primary-green);
+}
+
+.onboarding__decoration {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.onboarding__decoration--1 {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-primary-green);
+    top: 20%;
+    left: 10%;
+    animation: pulse 2s infinite;
+}
+
+.onboarding__decoration--2 {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-primary-purple);
+    top: 30%;
+    right: 15%;
+    animation: pulse 2.5s infinite;
+}
+
+.onboarding__decoration--3 {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-gray);
+    bottom: 30%;
+    left: 20%;
+    animation: pulse 3s infinite;
+}
+
+.onboarding__decoration--4 {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--color-primary-green);
+    background: transparent;
+    bottom: 20%;
+    right: 10%;
+    animation: pulse 2s infinite;
+    animation-delay: 1s;
+}
+
+.onboarding__content {
+    padding: var(--space-xl) 0;
+    text-align: center;
+}
+
+.onboarding__title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-md);
+}
+
+.onboarding__description {
+    font-size: var(--font-size-md);
+    color: var(--color-gray);
+    line-height: var(--line-height-relaxed);
+}
+
+.onboarding__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    padding: var(--space-sm);
+    padding-left: var(--space-xl);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-fast);
+    margin-top: auto;
+}
+
+.onboarding__cta:hover {
+    background-color: #3a3a3a;
+}
+
+.onboarding__cta-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-primary-green);
+    color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.onboarding__cta:hover .onboarding__cta-icon {
+    transform: translateX(4px);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(var(--tx, 0));
+    }
+
+    50% {
+        transform: translateY(-10px) translateX(var(--tx, 0));
+    }
+}
+
+.onboarding__card--3 {
+    --tx: -50%;
+}
