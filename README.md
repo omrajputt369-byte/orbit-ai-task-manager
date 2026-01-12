@@ -11,8 +11,9 @@ A premium, modern task management application built with React, TypeScript, and 
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?logo=vite)](https://vitejs.dev)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-omrajputt369--byte-181717?logo=github)](https://github.com/omrajputt369-byte)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Netlify-00C7B7?logo=netlify&logoColor=white)](https://orbitaitaskmanager.netlify.app)
 
-[Features](#features) • [Screenshots](#screenshots) • [Installation](#installation) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
+[Live Demo](https://orbitaitaskmanager.netlify.app) • [Features](#features) • [Screenshots](#screenshots) • [Installation](#installation) • [Tech Stack](#tech-stack)
 
 </div>
 
