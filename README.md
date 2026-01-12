@@ -10,6 +10,7 @@ A premium, modern task management application built with React, TypeScript, and 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript)](https://typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?logo=vite)](https://vitejs.dev)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-omrajputt369--byte-181717?logo=github)](https://github.com/omrajputt369-byte)
 
 [Features](#features) • [Screenshots](#screenshots) • [Installation](#installation) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
 
@@ -113,10 +114,10 @@ A premium, modern task management application built with React, TypeScript, and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/taskflow.git
+git clone https://github.com/omrajputt369-byte/orbit-ai-task-manager.git
 
 # Navigate to project directory
-cd taskflow
+cd orbit-ai-task-manager
 
 # Install dependencies
 npm install
@@ -197,7 +198,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made by Om Rajput**
+**Made by [Om Rajput](https://github.com/omrajputt369-byte)**
+
+[![GitHub](https://img.shields.io/github/followers/omrajputt369-byte?label=Follow&style=social)](https://github.com/omrajputt369-byte)
 
 ⭐ Star this repo if you find it helpful!
 
